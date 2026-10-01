@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | CV Desarrollador Web</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgba(15, 23, 42, 0.9);
+            border-bottom: 1px solid #334155;
+            padding: 1.2rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 4rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .tag {
+            background-color: rgba(37, 99, 235, 0.2);
+            color: var(--accent);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        .hero-text p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid #334155;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mi Curriculum</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="experiencia.html">Experiencia y Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-text">
+            <span class="tag">Graduado en DAW</span>
+            <h1>¡Hola! Soy Desarrollador Web <span class="highlight">Frontend & Backend</span></h1>
+            <p>Acabo de finalizar mis estudios en <strong>Desarrollo de Aplicaciones Web (DAW)</strong>. Me considero un chico muy trabajador, alegre y con muchísima motivación por seguir aprendiendo en el mundo tecnológico.</p>
+            
+            <p>Me apasiona el <strong>trabajo en equipo</strong>, crear un buen ambiente laboral y colaborar codo con codo para dar respuesta a proyectos desafiantes.</p>
+
+            <div class="about-cards">
+                <div class="card">
+                    <h3>Trabajador</h3>
+                    <p>Constante, comprometido con los plazos y orientado a resultados de calidad.</p>
+                </div>
+                <div class="card">
+                    <h3>Alegre y Positivo</h3>
+                    <p>Aporto buena energía, empatía y ganas de sumar al grupo día a día.</p>
+                </div>
+                <div class="card">
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Disfruto compartiendo ideas, escuchando y aprendiendo de mis compañeros.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <a href="experiencia.html" class="btn">Ver Experiencia y Habilidades</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Curriculum Vitae | Desarrollador Web Junior</p>
+    </footer>
+
+</body>
+</html>
